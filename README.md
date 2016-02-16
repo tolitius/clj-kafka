@@ -19,6 +19,8 @@ Add the following to your [Leiningen](http://github.com/technomancy/leiningen) `
 Discovery of Kafka brokers from Zookeeper:
 
 ```clj
+(require '[clj-kafka.zk :refer [brokers]])
+
 (brokers {"zookeeper.connect" "127.0.0.1:2181"})
 ;; ({:host "localhost", :jmx_port -1, :port 9999, :version 1})
 ```
