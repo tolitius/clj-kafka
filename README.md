@@ -151,7 +151,7 @@ There is support the following simple Kafka offset management operations:
 (reset-consumer-offsets "broker1:9092,broker1:9092" {"zookeeper.connect" "zkhost:2182"} "my-topic" "my-consumer" :latest)
 ```
 
-See: [clj-kafka.admin](https://pingles.github.io/clj-kafka/clj-kafka.offset.html)
+See: [clj-kafka.offset](src/clj_kafka/offset.clj)
 
 
 ## License
